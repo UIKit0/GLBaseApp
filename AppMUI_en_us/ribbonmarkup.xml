@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://schemas.microsoft.com/windows/2009/Ribbon">
+  <Application.Commands>
+    <Command Name="cmdTabHome" Symbol="cmdTabHome" LabelTitle="Home"/>
+    <Command Name="cmdQAT" Symbol="cmdQAT"/>
+    <Command Name="cmdFileMenu" Symbol="cmdFileMenu"/>
+
+    <!-- ***** AppMenu commands ***** -->
+    <Command Name="cmdVersionInfo" Symbol="cmdVersionInfo">
+      <Command.LabelTitle>
+        <String>Version Info</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image Source="../Resources/images/AppL.bmp"/>
+      </Command.LargeImages>
+    </Command>
+
+    <!-- Exit -->
+    <Command Name="cmdExit" Symbol="cmdExit" Keytip="X" Id="0xE102">
+      <Command.LabelTitle>
+        <String>Exit GLAppBase</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image Source="../Resources/images/ExitL.bmp"/>
+      </Command.LargeImages>
+      <Command.TooltipDescription>Exit the application.</Command.TooltipDescription>
+    </Command>
+
+    <Command Name="cmdControlGroup" Symbol="cmdControlGroup">
+      <Command.LabelTitle>
+        <String>Control</String>
+      </Command.LabelTitle>
+    </Command>
+    <Command Name="cmdStart" Symbol="cmdStart">
+      <Command.LabelTitle>
+        <String>Start</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image Source="../Resources/images/start64x64.bmp"/>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdStop" Symbol="cmdStop">
+      <Command.LabelTitle>
+        <String>Stop</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image Source="../Resources/images/stop64x64.bmp"/>
+      </Command.LargeImages>
+    </Command>
+  </Application.Commands>
+
+  <!-- ******************** View ******************** -->
+  <Application.Views>
+    <Ribbon>
+
+      <!-- Application Menu -->
+      <Ribbon.ApplicationMenu>
+        <ApplicationMenu CommandName="cmdFileMenu">
+          <MenuGroup Class="MajorItems">
+            <Button CommandName="cmdVersionInfo"/>
+          </MenuGroup>
+          <MenuGroup Class="MajorItems">
+            <Button CommandName="cmdExit"/>
+          </MenuGroup>
+        </ApplicationMenu>
+      </Ribbon.ApplicationMenu>
+
+      <!-- QAT -->
+      <Ribbon.QuickAccessToolbar>
+        <QuickAccessToolbar CommandName="cmdQAT">
+        </QuickAccessToolbar>
+      </Ribbon.QuickAccessToolbar>
+
+      <!-- Tabs -->
+      <Ribbon.Tabs>
+        <Tab CommandName="cmdTabHome">
+          <Group CommandName="cmdControlGroup" SizeDefinition="TwoButtons">
+            <Button CommandName="cmdStart"/>
+            <Button CommandName="cmdStop"/>
+          </Group>
+        </Tab>
+      </Ribbon.Tabs>
+    </Ribbon>
+  </Application.Views>
+</Application>

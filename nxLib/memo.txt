@@ -1,0 +1,153 @@
+
+
+コントロールの一覧
+1) UILabel
+ -> 本体,UIA共に完了
+2) UIButton
+ -> 本体,UIA共に完了
+ -> イベントはInvokeのみ実装
+3) UIComboBox
+ -> 本体は描画部分が未完成
+ -> UIA部分は仮実装が完了
+4) UICheckBox
+ -> 本体は描画部分が未完成
+ -> UIA部分は仮実装が完了
+5) UITextField
+ -> 本体, UIA共に完了
+6) UIRadioButtonGroup, UIRadioButton
+7) UIImage
+8) UIListBox
+9) UIListBoxItem
+10) UIProgressBar
+ -> 描画は仮実装
+ -> UIAは完了
+11) UIScrollBar
+ -> 本体,UIA共に完了
+12) UIPanel
+13) UIDataGrid, UIDataGridItem
+14) UIDialog
+15) UITabPanel
+16) UITable, UITableItem
+17) UITree, UITreeItem
+
+コントロールパターン
+
+Button Control Type
+-> UIButton
+・ボタン
+
+Calendar Control Type
+サポートしない
+
+ComboBox Control Type
+-> UIComboBox
+・コンボボックス
+
+DataGrid Control Type
+-> ??? UIListBox
+エクスプローラもDataGridとのこと。
+だとするとUIListもDataGridか?
+UIListBoxはUIDataGridに名前を変更する。
+
+DataItem Control Type
+-> ??? UIListItem
+UIListItemはUIDataGridItemに名前を変更する。
+
+Document Control Type
+-> サポートしない
+リッチドキュメント
+
+Edit Control Type
+-> UITextField, UITextArea
+
+Group Control Type
+-> UIRadioButtonGroup
+
+Header Control Type
+-> UIDataGridHeader
+データグリッドのヘッダ
+
+HeaderItem Control Type
+-> UIDataGridHeaderItem
+データグリッドのヘッダーの項目
+
+Hyperlink Control Type
+-> サポートしない
+
+Image Control Type
+-> UIImage
+
+List Control Type
+-> UIList
+
+ListItem Control Type
+-> UIListItem
+
+Menu Control Type
+-> リボンがあるのでサポートしない
+
+MenuBar Control Type
+-> リボンがあるのでサポートしない
+
+MenuItem Control Type
+-> リボンがあるのでサポートしない
+
+Pane Control Type
+-> サポートしない
+
+ProgressBar Control Type
+-> UIProgressBar
+
+RadioButton Control Type
+-> UIRadioButton
+
+ScrollBar Control Type
+-> UIScrollBar
+
+Separator Control Type
+-> サポートしない
+
+Slider Control Type
+-> サポートしない
+
+Spinner Control Type
+-> サポートしない
+
+SplitButton Control Type
+-> サポートしない
+
+StatusBar Control Type
+-> Win32を使うので不要
+
+Tab Control Type
+-> UITabPanel
+
+TabItem Control Type
+-> UITabPanel
+
+Table Control Type
+-> UITable
+
+Text Control Type
+-> UILabel
+
+Thumb Control Type
+-> どう使えばいい?
+
+TitleBar Control Type
+-> UIDialog
+
+ToolBar Control Type
+-> サポートしない
+
+ToolTip Control Type
+-> サポートしない
+
+Tree Control Type
+-> UITree
+
+TreeItem Control Type
+-> UITreeItem
+
+Window Control Type
+-> UIDialog

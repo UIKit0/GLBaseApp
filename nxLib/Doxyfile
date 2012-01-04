@@ -1,0 +1,15 @@
+PROJECT_NAME           = nx &nbsp; Library
+PROJECT_NUMBER         = 1.0
+OUTPUT_LANGUAGE        = Japanese
+EXTRACT_ALL            = YES
+JAVADOC_AUTOBRIEF      = YES
+WARN_FORMAT            = "$file:$line: $text"
+INPUT                  = .
+INPUT_ENCODING         = CP932
+FILE_PATTERNS          = *.cpp *.h *.doc
+RECURSIVE              = YES
+# INPUT_FILTER           = "nkf -e"
+GENERATE_LATEX         = NO
+HAVE_DOT               = YES
+QUIET                  = YES
+WARN_LOGFILE           = doxygen.log

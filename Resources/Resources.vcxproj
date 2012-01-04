@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0BCE9170-D06B-4F09-8C8D-E492306A00F3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Resources</RootNamespace>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)\Resources\props\boost_x86.props" />
+    <Import Project="$(SolutionDir)\Resources\props\WindowsSDK_x86.props" />
+    <Import Project="$(SolutionDir)\Resources\props\DirectX_x86.props" />
+    <Import Project="$(SolutionDir)\Resources\props\AppLib.props" />
+    <Import Project="$(SolutionDir)\Resources\props\antlr_x86.props" />
+    <Import Project="$(SolutionDir)\Resources\props\nxLib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)\Resources\props\boost_x64.props" />
+    <Import Project="$(SolutionDir)\Resources\props\WindowsSDK_x64.props" />
+    <Import Project="$(SolutionDir)\Resources\props\DirectX_x64.props" />
+    <Import Project="$(SolutionDir)\Resources\props\AppLib.props" />
+    <Import Project="$(SolutionDir)\Resources\props\antlr_x64.props" />
+    <Import Project="$(SolutionDir)\Resources\props\nxLib.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)\Resources\props\boost_x86.props" />
+    <Import Project="$(SolutionDir)\Resources\props\WindowsSDK_x86.props" />
+    <Import Project="$(SolutionDir)\Resources\props\DirectX_x86.props" />
+    <Import Project="$(SolutionDir)\Resources\props\AppLib.props" />
+    <Import Project="$(SolutionDir)\Resources\props\antlr_x86.props" />
+    <Import Project="$(SolutionDir)\Resources\props\nxLib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)\Resources\props\boost_x64.props" />
+    <Import Project="$(SolutionDir)\Resources\props\WindowsSDK_x64.props" />
+    <Import Project="$(SolutionDir)\Resources\props\DirectX_x64.props" />
+    <Import Project="$(SolutionDir)\Resources\props\AppLib.props" />
+    <Import Project="$(SolutionDir)\Resources\props\antlr_x64.props" />
+    <Import Project="$(SolutionDir)\Resources\props\nxLib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bat\forwarddecl.jar" />
+    <None Include="bat\gen_forwarddecl.bat" />
+    <None Include="bat\mui.bat" />
+    <None Include="bat\mui_x64.bat" />
+    <None Include="ico\App.ico" />
+    <None Include="images\AppL.bmp" />
+    <None Include="images\Copy.bmp" />
+    <None Include="images\Cut.bmp" />
+    <None Include="images\ExitL.bmp" />
+    <None Include="images\NewL.bmp" />
+    <None Include="images\opencs32x32.bmp" />
+    <None Include="images\opencs64x64.bmp" />
+    <None Include="images\openfile32x32.bmp" />
+    <None Include="images\openfile64x64.bmp" />
+    <None Include="images\OpenFileL.bmp" />
+    <None Include="images\Paste.bmp" />
+    <None Include="images\PrintL.bmp" />
+    <None Include="images\PrintPreviewL.bmp" />
+    <None Include="images\random32x32.bmp" />
+    <None Include="images\random64x64.bmp" />
+    <None Include="images\SaveAsL.bmp" />
+    <None Include="images\SaveL.bmp" />
+    <None Include="images\settings32x32.bmp" />
+    <None Include="images\settings64x64.bmp" />
+    <None Include="images\start32x32.bmp" />
+    <None Include="images\start64x64.bmp" />
+    <None Include="images\stop32x32.bmp" />
+    <None Include="images\stop64x64.bmp" />
+    <None Include="images\UndoS.bmp" />
+    <None Include="mui_rcconfig.xml" />
+    <None Include="props\antlr_x64.props" />
+    <None Include="props\antlr_x86.props" />
+    <None Include="props\AppLib.props" />
+    <None Include="props\boost_x64.props" />
+    <None Include="props\boost_x86.props" />
+    <None Include="props\DirectX_x64.props" />
+    <None Include="props\DirectX_x86.props" />
+    <None Include="props\gtest_x64.props" />
+    <None Include="props\gtest_x86.props" />
+    <None Include="props\nxLib.props" />
+    <None Include="props\nxLibColorSetDef.props" />
+    <None Include="props\nxLib_colorsetdef.props" />
+    <None Include="props\opengl_x64.props" />
+    <None Include="props\opengl_x86.props" />
+    <None Include="props\WindowsSDK_x64.props" />
+    <None Include="props\WindowsSDK_x86.props" />
+    <None Include="shaders\fs.glsl" />
+    <None Include="shaders\vs.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

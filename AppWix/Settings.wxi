@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+
+  <?define ProductName="App" ?>
+  <?define ProductVersion="1.0.0.0" ?>
+  <?define ProductManufacturer="Yohei Yoshihara" ?>
+
+  <?if $(var.Platform) = x64 ?>
+  <?define ProductId="6A720EAF-31C1-4D34-A9CE-CA32524AC57A" ?>
+  <?define ProductUpgradeCode="CD2726B3-BD69-4B87-B35A-DBC3D525FE67" ?>
+  <?define Win64="yes" ?>
+  <?define PlatformProgramFilesFolder="ProgramFiles64Folder" ?>
+  <?define BinaryDir="..\x64\Release" ?>
+  <?else ?>
+  <?define ProductId="98286C7C-BBCD-47CD-8851-619C91DD5F08" ?>
+  <?define ProductUpgradeCode="EA608535-7645-408D-A74A-143C906107FB" ?>
+  <?define Win64="no" ?>
+  <?define PlatformProgramFilesFolder="ProgramFilesFolder" ?>
+  <?define BinaryDir="..\Release" ?>
+  <?endif ?>
+
+</Include>
